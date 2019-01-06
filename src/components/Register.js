@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "../styles/register.css";
 class Register extends Component {
   state = {
@@ -8,9 +9,13 @@ class Register extends Component {
     passwordTwice: "",
     emailValid: true,
     passwordValid: true,
-    error: "",
-    loading: this.props.loading
+    error: ""
   };
+
+  static PropTypes = {
+    handleNewUser: PropTypes.func.isRequired
+  };
+
   handleInputChange = e => {
     const name = e.currentTarget.name;
     const value = e.currentTarget.value;

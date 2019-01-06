@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Loading from "../components/Loading";
+import PropTypes from "prop-types";
 import "../styles/register.css";
 
 class Login extends Component {
@@ -7,6 +8,14 @@ class Login extends Component {
     email: "",
     password: "",
     loading: this.props.loading
+  };
+  static propTypes = {
+    error: PropTypes.bool.isRequired,
+    handleLogin: PropTypes.func.isRequired
+  };
+  static defaultProps = {
+    loading: false,
+    error: false
   };
 
   handleInputChange = e => {
