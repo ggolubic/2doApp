@@ -1,0 +1,55 @@
+.formInfo {
+  padding: 5px 10px 10px 20px;
+  color: white;
+}
+.formInfo > p {
+  color: #888;
+  font-size: 0.8em;
+}
+.formInfo > h3 {
+  margin-top: 5px;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #888;
+  text-align: center;
+  background-color: var(--registerFormGray);
+  border-radius: 5px;
+}
+.registerForm > input {
+  margin: 10px 15px 3px 15px;
+  padding: 8px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: var(--registerFormBlack);
+  border-radius: 4px;
+}
+.registerForm > input:nth-child(1) {
+  margin-top: 20px;
+}
+.submitBtn {
+  padding: 8px;
+  margin-top: 20px;
+  background-color: #fd625e;
+  align-self: center;
+  width: 89.5%;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.error {
+  text-align: left;
+  margin-left: 15px;
+  color: #e63631;
+}
+.invalid {
+  border: 1px solid #e63631 !important;
+}
+.hidden {
+  display: none;
+}

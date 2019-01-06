@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: var(--dark-gray);
+  border-bottom: solid 1px var(--light-border);
+  z-index: 1;
+}
+.wrapper:hover {
+  background-color: var(--gray);
+}
+/* Napravi query za manji font */
+.details {
+  margin-left: 20px;
+}
+/*Napravi query za botun*/
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 3px var(--light-gray);
+  background-color: var(--dark-gray);
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+.details > h3 {
+  margin-bottom: 0;
+  color: var(--light-gray);
+  font-weight: 400;
+}
+.details_minor {
+  display: flex;
+  align-items: center;
+  color: var(--icon-purple);
+}
+.details_minor > p {
+  margin: 10px 10px;
+}
+.icon_small {
+  font-size: 15px;
+}
+.icon_small:hover {
+  transform: scale(1.2);
+}
+.green_check {
+  color: green;
+}
+.green {
+  background-color: green;
+}
+
+@media screen and (max-width: 585px) {
+  .details {
+    margin-left: 10px;
+    font-size: 2.8vw;
+  }
+  .btn {
+    width: 15px;
+    height: 20px;
+  }
+  .details_minor > p {
+    font-size: 3vw;
+  }
+}

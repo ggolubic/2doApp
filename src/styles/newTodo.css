@@ -1,0 +1,37 @@
+.new_todo {
+  display: flex;
+  align-items: center;
+  color: var(--icon-purple);
+  margin-left: 20px;
+  border-bottom: solid 1px var(--light-border);
+  cursor: pointer;
+}
+.new_todo:hover {
+  font-size: 1.2em;
+}
+.form {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  color: var(--light-gray);
+}
+#date {
+  width: 130px;
+  margin-bottom: 10px;
+}
+#submit-btn {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 70px;
+  padding: 3px;
+  cursor: pointer;
+}
+#opis {
+  width: 50%;
+  height: 100px;
+}
+@media screen and (max-width: 585px) {
+  #opis {
+    height: 50px;
+  }
+}

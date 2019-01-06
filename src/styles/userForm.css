@@ -1,0 +1,36 @@
+.registerFormWrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.registerFormParent {
+  position: relative;
+  width: 300px;
+  margin: 15% auto;
+  align-items: center;
+  background-color: var(--registerFormBlack);
+  border-radius: 5px;
+}
+.switch {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  cursor: pointer;
+}
+#Register > p,
+#Login > p {
+  margin-bottom: 0;
+  color: var(--textColor);
+  padding-bottom: 10px;
+}
+#Login {
+  border-left: 1px solid var(--registerFormGray);
+}
+.inactive {
+  background-color: var(--registerFormGray);
+}
