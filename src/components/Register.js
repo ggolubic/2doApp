@@ -12,7 +12,7 @@ class Register extends Component {
     error: ""
   };
 
-  static PropTypes = {
+  static propTypes = {
     handleNewUser: PropTypes.func.isRequired
   };
 

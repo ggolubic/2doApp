@@ -63,6 +63,6 @@
 
 @media screen and (max-height: 860px) {
   .fixed_div {
-    height: 45vh;
+    height: 60vh;
   }
 }

@@ -8,7 +8,6 @@ class Todo extends Component {
   state = {
     activeTab: "My Day",
     prevActiveTab: "My Day",
-    activeSection: "My Day",
     components: [
       { name: "My Day", icons: "far fa-sun icon" },
       { name: "To-Do", icons: "far fa-calendar-check icon" },
@@ -21,23 +20,11 @@ class Todo extends Component {
     ]
   };
 
-  componentDidMount(props) {
-    if (this.props.user.name === "default") {
-      setTimeout(() => {
-        return (
-          <div>
-            <p>Please login or sign up!</p>
-          </div>
-        );
-      }, 200);
-    }
-  }
   /*Switch current active tab to clicked tab*/
   handleTabClick = name => {
     this.setState(prevState => ({
       prevActiveTab: prevState.activeTab,
-      activeTab: name === this.state.activeTab ? this.state.activeTab : name,
-      activeSection: name
+      activeTab: name === this.state.activeTab ? this.state.activeTab : name
     }));
   };
 
@@ -64,7 +51,7 @@ class Todo extends Component {
         </div>
         <div className="right">
           <Tab
-            active={this.state.activeSection}
+            active={this.state.activeTab}
             sections={this.state.sections}
             todos={this.props.todos}
             completed={this.props.completed}

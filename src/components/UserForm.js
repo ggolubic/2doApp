@@ -9,6 +9,13 @@ class UserForm extends Component {
     isActive: "Register"
   };
 
+  componentDidMount() {
+    document.querySelector("body").style.overflow = "hidden";
+  }
+  componentWillUnmount() {
+    document.querySelector("body").style.overflow = "auto";
+  }
+
   handleClick = e => {
     const name = e.currentTarget.id;
     if (name === "Login") {

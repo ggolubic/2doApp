@@ -1,15 +1,16 @@
 .main {
   display: grid;
+  margin: 0 auto;
+  overflow: auto;
   width: 100%;
   max-width: 1200px;
   z-index: 0;
   grid-template-columns: 25% 75%;
-  margin: 0 auto;
   background-color: var(--dark-gray);
-  min-height: 100%;
-  margin-bottom: -30px;
-  padding-bottom: 33px;
+  min-height: calc(100vh - 104px);
+  margin-bottom: -50px;
   border-radius: 5px;
+  padding-bottom: 50px;
 }
 .sidebar {
   display: flex;

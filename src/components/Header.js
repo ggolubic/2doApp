@@ -19,7 +19,7 @@ const Header = props => {
     </div>
   );
 };
-Header.PropTypes = {
+Header.propTypes = {
   user: PropTypes.object.isRequired
 };
 export default Header;
